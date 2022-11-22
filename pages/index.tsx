@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/App.module.scss'
-import Landing from '../pages/Landing'
+import React from 'react'
+import Navbar from 'components/Navbar'
+import Landing from 'pages/landing'
 
 export default function App() {
   return (
@@ -13,6 +15,7 @@ export default function App() {
       </Head>
 
       <main className={styles.main}>
+      <Navbar/>
       <Landing/>
       </main>
 
