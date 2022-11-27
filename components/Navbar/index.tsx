@@ -15,6 +15,11 @@ export default function Navbar() {
             Landing
           </Link>
         </li>
+        <li>
+          <Link href="/details-page">
+            detailsPage
+          </Link>
+        </li>
       </ul>
     </div>
   )
