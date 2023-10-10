@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/App.module.scss'
 import React from 'react'
 import Navbar from 'components/Navbar'
-import Landing from 'pages/landing'
+import Landing from 'pages/Landing'
 import Intro from 'components/Intro'
 import Social from 'components/Social'
 
