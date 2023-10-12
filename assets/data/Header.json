@@ -1,0 +1,51 @@
+{
+    "navbarData": [
+        {
+            "label": "Intro",
+            "icon": "home",
+            "href": "/"
+        },
+        {
+            "label": "Portfolio",
+            "icon": "th",
+            "href": "/details-page"
+        },
+        {
+            "label": "About Me",
+            "icon": "user",
+            "href": "/details-page"
+        },
+        {
+            "label": "Contact",
+            "icon": "envelope",
+            "href": "/details-page"
+        }
+    ],
+    "socialData": [
+        {
+            "label": "Twitter",
+            "icon": "twitter",
+            "href": "#"
+        },
+        {
+            "label": "Facebook",
+            "icon": "facebook",
+            "href": "#"
+        },
+        {
+            "label": "Github",
+            "icon": "github",
+            "href": "#"
+        },
+        {
+            "label": "Dribbble",
+            "icon": "dribbble",
+            "href": "#"
+        },
+        {
+            "label": "Gmail",
+            "icon": "envelope",
+            "href": "#"
+        }
+    ]
+}

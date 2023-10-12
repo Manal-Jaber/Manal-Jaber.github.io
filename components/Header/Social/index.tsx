@@ -1,39 +1,27 @@
-
+import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './index.module.scss';
-import Link from 'next/link'
-import { faTwitter, faFacebookF, faGithub, faDribbble } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import data from 'assets/data/Header.json'
+import iconMap from 'utilities/iconMap';
 
 export default function Social() {
-
   return (
     <ul className={styles.social} id='social'>
-      <li>
-        <Link href="#">
-          <FontAwesomeIcon className={styles.icon} icon={faTwitter} />
-        </Link>
-      </li>
-      <li>
-        <Link href="#">
-          <FontAwesomeIcon className={styles.icon} icon={faFacebookF} />
-        </Link>
-      </li>
-      <li>
-        <Link href="#">
-          <FontAwesomeIcon className={styles.icon} icon={faGithub} />
-        </Link>
-      </li>
-      <li>
-        <Link href="#">
-          <FontAwesomeIcon className={styles.icon} icon={faDribbble} />
-        </Link>
-      </li>
-      <li>
-        <Link href="#">
-          <FontAwesomeIcon className={styles.icon} icon={faEnvelope} />
-        </Link>
-      </li>
+      {data?.socialData?.map((element: any, id: number) => {
+        const {label, icon, href="#"} = element;
+        return (
+          <li key={id}>
+            <Link href={href}>
+              {icon?
+               //@ts-ignore
+               <FontAwesomeIcon className={styles.icon} icon={iconMap[icon]}/>
+               :
+               label
+              }
+            </Link>
+          </li>
+        )
+      })}
     </ul>
   )
 }

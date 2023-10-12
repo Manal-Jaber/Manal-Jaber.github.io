@@ -1,12 +1,9 @@
 
-import styles from './index.module.scss'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import webClipper from "assets/images/page-clipper.png";
-import code from "assets/images/code.png";
-import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import data from "assets/data/Navbar.json"
+import styles from './index.module.scss'
+import data from 'assets/data/Header.json'
 import iconMap from 'utilities/iconMap';
 
 export default function Navbar() {
@@ -21,8 +18,8 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar} id='nav'>
       <ul>
-        {data?.navbarData?.map((element, id) => {
-          const {label, icon, href} = element
+        {data?.navbarData?.map((element:any, id: number) => {
+          const {label, icon, href="#"} = element
           return (
             <li key={id}>
               <Link href={href} onClick={() => handleClick(href)}>
