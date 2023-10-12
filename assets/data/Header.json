@@ -1,4 +1,13 @@
 {
+    "introData": {
+        "logo": {
+            "imageName": "code.png",
+            "alt": "code"
+
+        },
+        "name": "Manal Jaber",
+        "title": "Software Engineer"
+    },
     "navbarData": [
         {
             "label": "Intro",
