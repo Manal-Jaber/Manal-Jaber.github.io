@@ -3,12 +3,12 @@
         list-style: none;
         padding-left: 0;
         margin-bottom: 0;
+        font-size: 0.8em;
 
         li {
-            padding-left: 0;
+            padding: 0.5rem 1.5rem;
 
             a {
-                padding: 0.5em 1.5em 0.5em 1.5em;
                 color: rgba(255, 255, 255, 0.5);
                 text-decoration: none;
                 outline: 0;
@@ -27,10 +27,12 @@
             &.active {
                 background: rgba(0, 0, 0, 0.15);
                 box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
-                color: #fff;
+                a {
+                    color: #fff;
 
-                .icon {
-                    color: #e27689;
+                    .icon {
+                        color: #e27689;
+                    }
                 }
             }
         }
