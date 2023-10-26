@@ -22,8 +22,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <Header/>
     <Component {...pageProps} />
 
-    <footer className={styles.footer}>
-    </footer>
+    {/* <footer className={styles.footer}>
+    </footer> */}
   </div>
   )
 }
