@@ -1,0 +1,28 @@
+.titleTag {
+    position: absolute;
+    left: 10%;
+    top: 12%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100px;
+    height: 180px;
+    .paper {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    .title {
+        width: 100%;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        transform: rotate(75deg);
+        font-size: 24px;
+        font-family: 'Handlee', sans-serif;
+    }
+    .arrow {
+        position: absolute;
+        left: 40%;
+        bottom: 10%;
+        transform: scaleY(-1) rotate(40deg);
+    }
+}
