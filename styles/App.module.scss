@@ -1,8 +1,8 @@
 @import './base/base';
 
 .container {
-  margin-left: 20%;
-  padding: 4rem 2rem;
+  margin-left: calc(20% - 2rem);
+  padding: 0 2rem 4rem 2rem;
   position: relative;
 }
 
