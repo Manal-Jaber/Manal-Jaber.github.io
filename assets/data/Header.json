@@ -15,9 +15,9 @@
             "href": "/"
         },
         {
-            "label": "Portfolio",
+            "label": "Projects",
             "icon": "th",
-            "href": "/details-page"
+            "href": "/projects"
         },
         {
             "label": "About Me",
