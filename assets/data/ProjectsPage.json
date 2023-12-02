@@ -1,0 +1,17 @@
+{
+    "titleTagText": "My Work",
+    "projectsData": [
+        {
+
+            "image": {
+                "imageName": "petstagram.png",
+                "alt": "petstagram",
+                "width": 355,
+                "height": 632
+            },
+            "slug": "petstagram",
+            "title": "Petstagram",
+            "description": "Animals lovers social platform to share moments and pics of their pets"
+        }
+    ]
+}
