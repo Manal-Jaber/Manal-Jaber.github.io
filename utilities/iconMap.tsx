@@ -1,6 +1,6 @@
 // utilities/iconMap.js
 import { faTwitter, faFacebookF, faGithub, faDribbble } from '@fortawesome/free-brands-svg-icons';
-import { faHome, faTh, faUser, faEnvelope /* Add more icons here */ } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faTh, faUser, faEnvelope, faBars, faXmark /* Add more icons here */} from '@fortawesome/free-solid-svg-icons';
 
 const iconMap = {
   "home": faHome,
@@ -10,7 +10,9 @@ const iconMap = {
   "twitter": faTwitter,
   "facebook": faFacebookF,
   "github": faGithub,
-  "dribbble": faDribbble
+  "dribbble": faDribbble,
+  "menu": faBars,
+  "close": faXmark
   // Add more icons here, matching the icon name to the imported icon
 };
 
