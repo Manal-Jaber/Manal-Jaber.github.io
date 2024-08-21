@@ -3,11 +3,11 @@
     "imageTextContainerData": {
 
         "image": {
-            "imageName": "girlcoding.jpeg",
-            "alt": "girl coding",
-            "width": 151,
-            "height": 172
+            "imageName": "profile.jpg",
+            "alt": "my pic",
+            "width": 250,
+            "height": 250
         },
-        "text": "Mid-level frontend developer with proven 3+ years of experience in delivering high quality interactive web applications. As an organized result-driven professional with high attention to details, I tend to reproduce satisfactory results with pixel-perfect, cleanly coded and well documented websites. I am also a good team player who learn and adapt fast always aiming for growth, skill development and building good relations"
+        "text": "Mid-level frontend developer with proven 4+ years of experience in delivering high quality interactive web applications. I am known to produce pixel-perfect, cleanly coded and well documented websites.\n I have been in love with programming and computers as long as I remember, and I like to put my earned skills into use to help others find online solutions for their needs.\nMy previous roles include teaching and research in Physics, which has helped me develop my interpersonal, soft and technical skills as well."
     }
 }
