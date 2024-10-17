@@ -4,6 +4,14 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {},
+    colors: {
+      background: '#11071F',
+      header: '#1A0B2E',
+      white: '#FFFFFF',
+    },
+    fontFamily: {
+      Preahvihear: ['Preahvihear', 'ui-sans-serif', 'system-ui'],
+    },
   },
   variants: {
     extend: {},
