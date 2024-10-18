@@ -8,6 +8,7 @@ module.exports = {
       background: '#11071F',
       header: '#1A0B2E',
       white: '#FFFFFF',
+      purple: '#7127BA',
     },
     fontFamily: {
       Preahvihear: ['Preahvihear', 'ui-sans-serif', 'system-ui'],
