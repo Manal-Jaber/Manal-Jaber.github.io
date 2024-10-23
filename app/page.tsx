@@ -1,5 +1,6 @@
 'use client'
 
+import AboutMe from '@/components/parts/AboutMe'
 import Intro from '@/components/parts/Intro'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
@@ -27,8 +28,9 @@ const Common = dynamic(() => import('@/components/canvas/View').then((mod) => mo
 
 export default function Page() {
   return (
-    <>
+    <div className=''>
       <Intro />
+      <AboutMe />
       {/* <div className='mx-auto flex w-full flex-col flex-wrap items-center md:flex-row  lg:w-4/5'>
         <div className='flex w-full flex-col items-start justify-center p-12 text-center md:w-2/5 md:text-left'>
           <p className='w-full uppercase'>Next + React Three Fiber</p>
@@ -78,6 +80,6 @@ export default function Page() {
           </p>
         </div>
       </div> */}
-    </>
+    </div>
   )
 }

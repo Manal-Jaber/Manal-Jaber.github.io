@@ -1,7 +1,7 @@
-const title = 'React Three Next Starter'
-const url = 'https://react-three-next.vercel.app/'
-const description = 'The easiest and fastest way to create a 3D website using React Three Fiber and NextJS'
-const author = 'Author'
+const title = 'Manal Jaber-Shehayeb'
+const url = 'https://manal-jaber.github.io/'
+const description = 'Manal Jaber-Shehayeb Portfolio'
+const author = ' Manal Jaber-Shehayeb'
 const twitter = '@pmndrs'
 
 export default function Head() {

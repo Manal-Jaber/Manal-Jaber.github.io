@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const Intro = () => {
-    return <div className="intro relative flex flex-row">
+    return <div className="intro relative flex max-w-2xl flex-row">
         <div className='relative min-w-fit'>
             <Image src="/gradients/profile.svg" alt="" width={300} height={431} />
 
@@ -12,7 +12,8 @@ const Intro = () => {
             <div className="flex max-w-xs flex-col gap-1 font-Preahvihear text-white">
                 <p className="text-sm">Hello I am <span className="text-purple">Manal Jaber-Shehayeb</span></p>
                 <p className="text-sm">Curious Problem Solver</p>
-                <p className="text-xl">Often wondering about things and getting them <span className="text-purple">Done</span></p>
+                <p className="text-xl">Often wondering about things and getting them <span className="bg-[url('/vectors/Ellipse.svg')] bg-contain bg-center bg-no-repeat px-3 text-purple">Done</span>...</p>
+                <p className="text-xs font-light">Because i like to tinker with things</p>
             </div>
 
         </div>
