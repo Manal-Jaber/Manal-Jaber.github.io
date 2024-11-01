@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
   return (
     <div
       ref={ref}
-      className='relative mx-auto mt-36 h-full w-3/4 touch-auto overflow-auto'
+      className='relative mx-auto mt-36 h-full w-3/4 touch-auto'
     >
       {children}
       <Scene

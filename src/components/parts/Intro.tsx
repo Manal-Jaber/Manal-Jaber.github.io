@@ -11,9 +11,10 @@ const Intro = () => {
             <Image src="/icons/arrow.svg" className="mt-3" alt="" width={78.34} height={47.82} />
             <div className="flex max-w-xs flex-col gap-1 font-Preahvihear text-white">
                 <p className="text-sm">Hello I am <span className="text-purple">Manal Jaber-Shehayeb</span></p>
-                <p className="text-sm">Curious Problem Solver</p>
-                <p className="text-xl">Often wondering about things and getting them <span className="bg-[url('/vectors/Ellipse.svg')] bg-contain bg-center bg-no-repeat px-3 text-purple">Done</span>...</p>
-                <p className="text-xs font-light">Because i like to tinker with things</p>
+                <p className="text-sm">Curious Child</p>
+                <p className="text-xl">Astonished by the <span className="bg-[url('/vectors/Ellipse.svg')] bg-contain bg-center bg-no-repeat px-4 text-purple">World</span>...</p>
+                <p className="text-sm">Because i have not yet become world-weary</p>
+                <p className="text-center text-[10px] font-light italic text-purple">inspired by Sophie's World - Jostein Gaarder</p>
             </div>
 
         </div>

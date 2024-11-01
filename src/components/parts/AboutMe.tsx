@@ -5,6 +5,11 @@ const AboutMe = () => {
             <p>In the meantime, I am working as a Frontend Software Engineer at VML</p>
         </div>
         <p>Mid-level frontend developer with proven 4+ years of experience in delivering high quality interactive web applications. As an organized result-driven professional with high attention to details, I tend to reproduce satisfactory results with pixel-perfect, cleanly coded and well documented websites. I am also a good team player who learn and adapt fast always aiming for gowth, skill development and building good relations.</p>
+        <div>
+            <p className="text-2xl">I am a Physicist. <span className="animate-ticker">|</span></p>
+            <p>In the meantime, I am working as a Frontend Software Engineer at VML</p>
+        </div>
+        <p>Mid-level frontend developer with proven 4+ years of experience in delivering high quality interactive web applications. As an organized result-driven professional with high attention to details, I tend to reproduce satisfactory results with pixel-perfect, cleanly coded and well documented websites. I am also a good team player who learn and adapt fast always aiming for gowth, skill development and building good relations.</p>
     </div>
 }
 export default AboutMe;
