@@ -1,33 +1,27 @@
 {
-    "introData": {
-        "logo": {
-            "imageName": "code.png",
-            "alt": "code"
-
-        },
-        "name": "Manal Jaber",
-        "title": "Software Engineer"
+    "name": "Manal Jaber",
+    "image": {
+        "src": "/avatars/manal.webp",
+        "alt": "manal",
+        "width": 60,
+        "height": 60
     },
     "navbarData": [
         {
-            "label": "Intro",
-            "icon": "home",
+            "label": "Home",
             "href": "/"
         },
         {
-            "label": "Projects",
-            "icon": "th",
-            "href": "/projects"
+            "label": "Work",
+            "href": "/work"
         },
         {
-            "label": "About Me",
-            "icon": "user",
-            "href": "/details-page"
+            "label": "Interests",
+            "href": "/interests"
         },
         {
-            "label": "Contact",
-            "icon": "envelope",
-            "href": "/details-page"
+            "label": "Articles",
+            "href": "/articles"
         }
     ],
     "socialData": [

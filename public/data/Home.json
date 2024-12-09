@@ -1,0 +1,14 @@
+{
+    "about": [
+        {
+            "title": "I am a Software Engineer. ",
+            "description": "In the meantime, I am working as a Frontend Software Engineer at VML",
+            "details": "Mid-level frontend developer with proven 4+ years of experience in delivering high quality interactive web applications. As an organized result-driven professional with high  attention to details, I tend to reproduce satisfactory results with pixel-perfect, cleanly coded and well documented websites. I am also a good team player who learn and adapt fast always aiming for growth, skill development and building good relations."
+        },
+        {
+            "title": "I am a Physicist. ",
+            "description": "I used to teach Math and Physics and do some research in Physics",
+            "details": "I have a Masters in Nuclear and Subatomic Physics after which I taught several years in different schools and institutions. I also did some Cosmology research afterwords."
+        }
+    ]
+}

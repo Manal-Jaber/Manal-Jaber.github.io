@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 const Header = () => {
   // Handling scroll events
+  const [data, setData] = useState([]);
   const [isScrollingUp, setIsScrollingUp] = useState(false);
   const [prevScrollY, setPrevScrollY] = useState(0);
 
@@ -23,6 +24,21 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollY]);
 
+  // JSON
+  useEffect(() => {
+    fetch("/data/Header.json")
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
+
+  const {
+    image = { src: "/avatars/manal.webp", alt: "", width: 0, height: 0 },
+    name = "",
+    navbarData = [],
+  } = data;
+
+  if (!data) return null;
+
   return (
     <header
       className={`${
@@ -30,20 +46,24 @@ const Header = () => {
       } top-0 z-50 flex w-full flex-row items-center justify-between bg-header p-4 md:px-10`}
     >
       <Link href="/" className="flex flex-row items-center gap-4">
-        <h1 className="font-Preahvihear text-xl ">Manal Jaber</h1>
+        <h1 className="font-Preahvihear text-xl ">{name}</h1>
         <Image
-          src={"/avatars/manal.webp"}
-          alt="manal"
-          width={60}
-          height={60}
+          src={image?.src}
+          alt={image?.alt}
+          width={image?.width}
+          height={image?.height}
           unoptimized
         />
       </Link>
       <section className="sections flex flex-row gap-4 md:gap-20">
-        <Link href="/">About Me</Link>
-        <Link href="/">Work</Link>
-        <Link href="/">Interests</Link>
-        <Link href="/">Articles</Link>
+        {navbarData?.map((item, index) => {
+          const { label, href } = item;
+          return (
+            <Link key={index} href={href}>
+              {label}
+            </Link>
+          );
+        })}
       </section>
     </header>
   );

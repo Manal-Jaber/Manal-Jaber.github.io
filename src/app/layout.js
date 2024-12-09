@@ -1,5 +1,6 @@
 // src/app/layout.js
 import "@/app/global.css";
+import { Header } from "@/components/Header";
 
 const title = "Manal Jaber-Shehayeb";
 const url = "https://manal-jaber.github.io/";
@@ -35,7 +36,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-background text-white antialiased">{children}</body>
+      <body className="bg-background text-white antialiased">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
