@@ -1,0 +1,130 @@
+{
+    "about": [
+        {
+            "title": "I am a Software Engineer. ",
+            "description": "In the meantime, I am working as a Frontend Software Engineer at VML",
+            "details": "I have been working as a frontend developer for the last 4 years where I build high quality interactive web applications.I have also worked as a Full Stack developer and built a few systems, some desktop and mobile apps. I aim to learn, grow my skills and build good relations.",
+            "skills": [
+                {
+                    "category": "Structure",
+                    "list": [
+                        {
+                            "label": "HTML",
+                            "icon": {
+                                "src": "/icons/html.png",
+                                "alt": "HTML5",
+                                "width": 48,
+                                "height": 48
+                            }
+                        },
+                        {
+                            "label": "CSS",
+                            "icon": {
+                                "src": "/icons/css.png",
+                                "alt": "CSS3",
+                                "width": 48,
+                                "height": 48
+                            }
+                        },
+                        {
+                            "label": "Bootstrap",
+                            "icon": {
+                                "src": "/icons/bootstrap.png",
+                                "alt": "Bootstrap4",
+                                "width": 48,
+                                "height": 48
+                            }
+                        },
+                        {
+                            "label": "Tailwind",
+                            "icon": {
+                                "src": "/icons/tailwind.png",
+                                "alt": "Tailwind5",
+                                "width": 48,
+                                "height": 48
+                            }
+                        },
+                        {
+                            "label": "Material UI",
+                            "icon": {
+                                "src": "/icons/mui.png",
+                                "alt": "MUI",
+                                "width": 48,
+                                "height": 48
+                            }
+                        }
+                    ]
+                },
+                {
+                    "category": "Frontend",
+                    "list": [
+                        {
+                            "label": "Jquery",
+                            "icon": {
+                                "src": "/icons/jquery.png",
+                                "alt": "Jquery",
+                                "width": 48,
+                                "height": 48
+                            }
+                        },
+                        {
+                            "label": "JavaScript",
+                            "icon": {
+                                "src": "/icons/javascript.png",
+                                "alt": "JavaScript",
+                                "width": 48,
+                                "height": 48
+                            }
+                        },
+                        {
+                            "label": "Angular",
+                            "icon": {
+                                "src": "/icons/angular.png",
+                                "alt": "Angular",
+                                "width": 48,
+                                "height": 48
+                            }
+                        },
+                        {
+                            "label": "React",
+                            "icon": {
+                                "src": "/icons/react.png",
+                                "alt": "React",
+                                "width": 48,
+                                "height": 48
+                            }
+                        },
+                        {
+                            "label": "Next",
+                            "icon": {
+                                "src": "/icons/next.png",
+                                "alt": "Next",
+                                "width": 48,
+                                "height": 48
+                            }
+                        }
+                    ]
+                },
+                {
+                    "category": "Animation",
+                    "list": [
+                        {
+                            "label": "Three.js",
+                            "icon": {
+                                "src": "/icons/threejs.png",
+                                "alt": "Three.js",
+                                "width": 48,
+                                "height": 48
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "I am a Physicist. ",
+            "description": "I used to teach Math and Physics and do some research in Physics",
+            "details": "I have a Masters in Nuclear and Subatomic Physics after which I taught several years in different schools and institutions. I also did some Cosmology research afterwords."
+        }
+    ]
+}

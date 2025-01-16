@@ -1,0 +1,92 @@
+{
+    "projects": [
+        {
+            "image": {
+                "src": "/img/projects/haunted-house.png",
+                "alt": "haunted-house",
+                "width": 1919,
+                "height": 941
+            },
+            "title": "Haunted House",
+            "description": "A 3d experience of a haunted house I did on Halloween",
+            "href": "https://haunted-house-inky.vercel.app/"
+        },
+        {
+            "image": {
+                "src": "/img/projects/spiral-galaxy.png",
+                "alt": "spiral-galaxy",
+                "width": 1105,
+                "height": 727
+            },
+            "title": "spiral Galaxy",
+            "description": "A 3d experience of a spiral galaxy I did to combine my passion for astronomy with 3d",
+            "href": "https://spiral-galaxy-tau.vercel.app/"
+        },
+        {
+            "image": {
+                "src": "/img/projects/newton-tree.png",
+                "alt": "newton-tree",
+                "width": 1280,
+                "height": 943
+            },
+            "title": "Newton Tree",
+            "description": "Get your revenge on Newton for finding gravity",
+            "href": "https://newton-tree.vercel.app/"
+        },
+        {
+            "image": {
+                "src": "/img/projects/petstagram.png",
+                "alt": "petstagram",
+                "width": 355,
+                "height": 632
+            },
+            "title": "Petstagram",
+            "description": "Animals lovers social platform to share moments and pics of their pets",
+            "href": "#"
+        },
+        {
+            "image": {
+                "src": "/img/projects/e-learning.png",
+                "alt": "e-learning",
+                "width": 1343,
+                "height": 600
+            },
+            "title": "E-learning",
+            "description": "Online Learning Platform for students, teachers, and administration.",
+            "href": "#"
+        },
+        {
+            "image": {
+                "src": "/img/projects/all-stiches.png",
+                "alt": "all-stiches",
+                "width": 1347,
+                "height": 625
+            },
+            "title": "All Stiches",
+            "description": "E-commerce website for a Crouchet Store.",
+            "href": "#"
+        },
+        {
+            "image": {
+                "src": "/img/projects/financial-tracker.png",
+                "alt": "financial-tracker",
+                "width": 1357,
+                "height": 610
+            },
+            "title": "Financial Tracker",
+            "description": "Financial Application that allows the company to manage its expenses and incomes.",
+            "href": "#"
+        },
+        {
+            "image": {
+                "src": "/img/projects/slaves-to-sirens.png",
+                "alt": "slaves-to-sirens",
+                "width": 1347,
+                "height": 625
+            },
+            "title": "Slaves to Siren",
+            "description": "Portfolio website for a Musical Band called Slaves To Siren.",
+            "href": "#"
+        }
+    ]
+}

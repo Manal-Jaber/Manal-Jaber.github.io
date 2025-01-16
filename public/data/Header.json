@@ -1,0 +1,47 @@
+{
+    "name": "Manal Jaber",
+    "image": {
+        "src": "/avatars/manal.webp",
+        "srcStatic": "/avatars/manal-static.webp",
+        "alt": "manal",
+        "width": 60,
+        "height": 60
+    },
+    "navbarData": [
+        {
+            "label": "Home",
+            "href": "/"
+        },
+        {
+            "label": "Work",
+            "href": "/work"
+        }
+    ],
+    "socialData": [
+        {
+            "label": "Twitter",
+            "icon": "twitter",
+            "href": "#"
+        },
+        {
+            "label": "Facebook",
+            "icon": "facebook",
+            "href": "#"
+        },
+        {
+            "label": "Github",
+            "icon": "github",
+            "href": "#"
+        },
+        {
+            "label": "Dribbble",
+            "icon": "dribbble",
+            "href": "#"
+        },
+        {
+            "label": "Gmail",
+            "icon": "envelope",
+            "href": "#"
+        }
+    ]
+}
