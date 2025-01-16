@@ -13,16 +13,34 @@ module.exports = {
           "50%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        wobble: {
+          "0%": {
+            transform: "translate(0px, -30px)", // top
+          },
+          "25%": {
+            transform: "translate(30px, 0px)", // right
+          },
+          "50%": {
+            transform: "translate(0px, 30px)", // bottom
+          },
+          "75%": {
+            transform: "translate(-30px, 0px)", // left
+          },
+          "100%": {
+            transform: "translate(0px, -30px)", // back to top
+          },
+        },
       },
       animation: {
-        ticker: "ticker 1.2s ease-in-out infinite",
+        ticker: "ticker 1s ease-in-out infinite",
+        wobble: "wobble 3s linear infinite",
       },
-    },
-    colors: {
-      background: "#11071F",
-      header: "#1A0B2E",
-      white: "#FFFFFF",
-      purple: "#7127BA",
+      colors: {
+        background: "#11071F",
+        header: "#1A0B2E",
+        white: "#FFFFFF",
+        purple: "#7127BA",
+      },
     },
     fontFamily: {
       Preahvihear: ["Preahvihear", "ui-sans-serif", "system-ui"],

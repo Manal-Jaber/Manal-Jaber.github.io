@@ -1,43 +1,77 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 const Header = () => {
-  // Handling scroll events
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(null);
   const [isScrollingUp, setIsScrollingUp] = useState(false);
   const [prevScrollY, setPrevScrollY] = useState(0);
+  const [mouseOver, setMouseOver] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
+  // Set mounted state
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY < prevScrollY) {
-        setIsScrollingUp(true);
-      } else {
-        setIsScrollingUp(false);
-      }
-      setPrevScrollY(currentScrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [prevScrollY]);
-
-  // JSON
-  useEffect(() => {
-    fetch("/data/Header.json")
-      .then((res) => res.json())
-      .then((data) => setData(data));
+    setIsMounted(true);
+    return () => setIsMounted(false);
   }, []);
 
+  // Memoize scroll handler
+  const handleScroll = useCallback(() => {
+    const currentScrollY = window.scrollY;
+    setIsScrollingUp(currentScrollY < prevScrollY);
+    setPrevScrollY(currentScrollY);
+  }, [prevScrollY]);
+
+  // Scroll effect
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
+  }, [handleScroll]);
+
+  // Fetch data
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setIsLoading(true);
+        const response = await fetch("/data/Header.json");
+        if (!response.ok) {
+          throw new Error("Failed to fetch header data");
+        }
+        const jsonData = await response.json();
+        setData(jsonData);
+      } catch (err) {
+        setError(err.message);
+        console.error("Error fetching header data:", err);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  // Early returns
+  if (!isMounted) return null;
+  if (isLoading) return <div>Loading...</div>; // Consider using a skeleton loader
+  if (error) return <div>Error loading header</div>;
+  if (!data) return null;
+
   const {
-    image = { src: "/avatars/manal.webp", alt: "", width: 0, height: 0 },
+    image = {
+      src: "/avatars/manal.webp",
+      srcStatic: "/avatars/manal-static.webp",
+      alt: "",
+      width: 0,
+      height: 0,
+    },
     name = "",
     navbarData = [],
   } = data;
-
-  if (!data) return null;
 
   return (
     <header
@@ -45,27 +79,44 @@ const Header = () => {
         isScrollingUp ? "fixed" : "absolute"
       } top-0 z-50 flex w-full flex-row items-center justify-between bg-header p-4 md:px-10`}
     >
-      <Link href="/" className="flex flex-row items-center gap-4">
-        <h1 className="font-Preahvihear text-xl ">{name}</h1>
+      <Link
+        href="/"
+        className="flex flex-row items-center gap-4"
+        onMouseEnter={() => setMouseOver(true)}
+        onMouseLeave={() => setMouseOver(false)}
+      >
+        <h1 className="font-Preahvihear text-xl">{name}</h1>
         <Image
-          src={image?.src}
-          alt={image?.alt}
-          width={image?.width}
-          height={image?.height}
+          src={mouseOver && isMounted ? image.src : image.srcStatic}
+          alt={image?.alt || ""}
+          width={image?.width || 0}
+          height={image?.height || 0}
           unoptimized
+          priority // Add priority for above-the-fold images
         />
       </Link>
-      <section className="sections flex flex-row gap-4 md:gap-20">
+      <nav
+        className="sections flex flex-row gap-4 md:gap-20"
+        aria-label="Main navigation"
+      >
         {navbarData?.map((item, index) => {
           const { label, href } = item;
           return (
-            <Link key={index} href={href}>
+            <Link
+              key={`nav-${href}-${index}`}
+              href={href}
+              className="hover:opacity-80 transition-opacity"
+            >
               {label}
             </Link>
           );
         })}
-      </section>
+      </nav>
     </header>
   );
 };
+
+// Optional: Add display name for debugging
+Header.displayName = "Header";
+
 export { Header };
