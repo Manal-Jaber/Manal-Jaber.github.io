@@ -60,7 +60,7 @@ const Intro = () => {
           </p>
           <p className="text-sm">Because i have not yet become world-weary</p>
           <p className="text-center text-[10px] font-light italic text-purple">
-            inspired by Sophie's World - Jostein Gaarder
+            inspired by Sophie&apos;s World - Jostein Gaarder
           </p>
         </div>
       </div>
